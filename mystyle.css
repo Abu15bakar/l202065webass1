@@ -1,0 +1,100 @@
+#page {
+  display: grid;
+  width: 100%;
+  height: 720px;
+  grid-template-areas:
+    "head head"
+    "main  nav"
+    "main  nav";
+  grid-template-rows: 10% 1fr 30px;
+  grid-template-columns: 80% 1fr;
+}
+
+#page > header {
+  color:orange;
+  grid-area: head;
+  background-image: url(bluewavve.jpg);
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+#page > main {
+  grid-area: main;
+  background-color: white;
+  
+ 
+}
+
+
+#myElement {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  z-index: 9999;
+  border: solid black;
+  line-height: 0;
+}
+
+#page > main h2{
+  content: "";
+  border-top: 3px solid orange;
+  height: 3px;
+  width: 80%;
+  color: blue;
+}
+
+
+#page > main h4{
+  /*padding-bottom: 5px;  /*Adjust the padding value as needed */
+  color: rgba(0, 0, 255, 0.733);
+  margin: 0;
+  padding-left: 5px;
+  padding-top: 5px;
+ 
+}
+
+#page > main p{
+  /*Adjust the padding value as needed*/ 
+  color: rgba(0, 0, 255, 0.582);
+  padding-left: 10px;
+  padding-top: 3px;
+  margin: 0;
+  
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: orange;
+  text-align: left; /* Adjust horizontal alignment to center */
+  padding-top: 150px; /* Add some padding around the text */
+  /*box-sizing: border-box;*/
+}
+
+#page>nav h2{
+  margin:0;
+  color: blue;
+  text-align: left;
+  padding-left: 1px;
+ /* box-sizing: border-box;
+  max-width: 100%*/
+}
+
+#page>nav ul{
+  margin:0;
+  color: blanchedalmond;
+  list-style-type: disc;
+ /* box-sizing: border-box;
+  max-width: 100%*/
+  padding-left: 20px; /* Remove default padding */
+  margin-left: 0; /* Remove default margin */
+  padding-bottom: 5px;
+}
+
+#page nav>p{
+  color: blanchedalmond;
+  margin:0;
+  padding-left: 5px;
+}
